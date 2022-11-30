@@ -10,23 +10,18 @@
     <meta name="og:description" property="og:description" content="D&A glædelige jule quiz">
     <meta name="og:title" property="og:title" content="DA jul'en kom til ATP">
     <meta name="og:type" property="og:type" content="website">
-    <meta name="image" content="https://csschristmascalendar.com/assets/og.jpg">
     <meta name="description" content="D&A glædelige jule quiz">
     <link rel="icon" type="image/png" href="./assets/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./assets/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="styles.css"> 
-
-    <script defer data-domain="csschristmascalendar.com" src="https://plausible.io/js/plausible.js"></script>
     </head>
-    <body>
+    <body onload="set_gates()">
 
     <div class="question">
         <h1><span class="title-1">Ord før/efter</span></h1>
-        <h1><span class="title-2">Find ordet der kan stå enten før eller efter de tre listede ord og danne 3 nye ord</span></h1>
-        <h1><span class="title-3">KAMP ...  
- SVANE … 
- MORGEN …</span></h1>
-        <h3><span class="title-1"></span></h3>
+        <h1><span class="title-2">Find ordet der kan stå enten efter de tre listede ord og danne 3 nye ord</span></h1>
+        <h1><span class="title-3">KAMP ...  <br> SVANE … <br> MORGEN …</span></h1>
+        <h3><span class="title-1">eksempel: <br> TENNIS … <br> HOPPE … <br> FOD... <br> Svaret er BOLD  (TENNISBOLD, HOPPEBOLD, FODBOLD)</span></h3>
     </div>
     <footer>
         <div><span class="footer-info">i</span>
@@ -34,5 +29,17 @@
         </div>
     </footer>
     </body>
+    <script>
+    function set_gates() {
+      var date = new Date();
+      var day = date.getDate();
+      var month = date.getMonth()+1;
+
+    if ((day < 8 && month == 12) || (month != 12)) {
+        var role = document.getElementsByClassName('question')[0];
+        role.innerHTML = '<h1><span class="title-1">Den er ikke klar endnu!</span></h1>';
+    }
+    }                
+    </script>
     </html>
     

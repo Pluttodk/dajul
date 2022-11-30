@@ -358,7 +358,7 @@ footer .footer-info {
 
 footer div div {
   position: relative;
-  margin-right: -12.3rem;
+  margin-right: -15.7rem;
   display: inline-block;
   border-radius: 0.4rem;
   padding: 0.6rem 0.8rem 0.6rem 0.2rem;
@@ -372,7 +372,7 @@ footer div div {
 @media only screen and (min-width: 576px) {
   footer div div {
     font-size: 1rem;
-    margin-right: -11.0rem;
+    margin-right: -19.5rem;
   }
 }
 

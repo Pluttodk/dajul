@@ -1,25 +1,33 @@
+start,close = "{","}"
+
 questions = [
-["1", "", "", "Ord i mellem", "Find ordet der kan stå mellem de to listede ord og danne to nye ord", "JÆVN … FLUE. Svaret er DØGN (JÆVNDØGN, DØGNFLUE)", "JULE … GAVE. Find ordet i mellem"],
-["2", "", "", "Ord i mellem", "Find ordet der kan stå mellem de to listede ord og danne to nye ord", "JÆVN … FLUE. Svaret er DØGN (JÆVNDØGN, DØGNFLUE)", "STJERNE … LYS. Find ordet i mellem"],
-["5", "", "", "Ord i mellem", "Find ordet der kan stå mellem de to listede ord og danne to nye ord", "JÆVN … FLUE. Svaret er DØGN (JÆVNDØGN, DØGNFLUE)", "SNE … VEJR. Find ordet i mellem"],
-["6", "", "", "Ord før/efter", "Find ordet der kan stå enten før eller efter de tre listede ord og danne 3 nye ord", "… PALME \n … FLUE \n … KAGE. Svaret er BANAN (BANANPALME, BANANFLUE, BANANKAGE)", "… POST \n … KALENDER \n … REJSE"],
-["7", "", "", "Ord før/efter", "Find ordet der kan stå enten før eller efter de tre listede ord og danne 3 nye ord", "… PALME \n … FLUE \n … KAGE. Svaret er BANAN (BANANPALME, BANANFLUE, BANANKAGE)", "… TID  \n … LOV  \n … PENGE"],
-["8", "", "", "Ord før/efter", "Find ordet der kan stå enten før eller efter de tre listede ord og danne 3 nye ord", "", "KAMP ...  \n SVANE … \n MORGEN …"],
-["9", "", "", "Ord før/efter", "Find ordet der kan stå enten før eller efter de tre listede ord og danne 3 nye ord", "", "EFTER ...  \n FOR … \n FEST …"],
-["12", "", "", "Anagram", "Byt om på bogstaverne så de danner nye ord", "", "NUKLEAR LEJDE"],
-["13", "", "", "Anagram", "Byt om på bogstaverne så de danner nye ord", "", "STÆVNEDE MIDER. Hint: Optræder i det nye testamente og møder Jesus"],
-["14", "", "", "Anagram", "Byt om på bogstaverne så de danner nye ord", "", "ORANGUTANGERNE. Hint: Karakter fra en julekalender og animationsfilm"],
-["15", "", "", "Skjulte ord", "Noget er skjult ved at bogstaverne i ordene er sat i alfabetisk ordning. Find sætningen ved hjælp af hintet", "", "Filmtitel: AACELLLOTUVY"],
-["16", "", "", "Skjulte ord", "Noget er skjult ved at bogstaverne i ordene er sat i alfabetisk ordning. Find sætningen ved hjælp af hintet", "", "Julekalender: BEEFGJLLPRRUUYÆ"],
-["19", "", "", "Skjulte ord", "Noget er skjult ved at bogstaverne i ordene er sat i alfabetisk ordning. Find sætningen ved hjælp af hintet", "", "Filmcitat (engelsk): ACEEEEFHIIKKMOPPRRTUYYY"],
-["20", "", "", "Wordle", "", "", ""],
-["21", "", "", "Wordle", "", "", ""],
-["22", "", "", "Wordle", "", "", ""],
-["23", "", "", "Wordle", "", "", ""]
+["1", "", "", "Ord i mellem", "Find ordet der kan stå mellem de to listede ord og danne to nye ord", "eksempel: <br> JÆVN … FLUE. <br> Svaret er DØGN (JÆVNDØGN, DØGNFLUE)", "JULE … GAVE"],
+["2", "", "", "Ord før/efter", "Find ordet der kan stå enten før de tre listede ord og danne 3 nye ord", "eksempel: <br> … PALME <br> … FLUE <br> … KAGE. <br> Svaret er BANAN (BANANPALME, BANANFLUE, BANANKAGE)", "… POST <br> … KALENDER <br> … REJSE"],
+["5", "", "https://wordleplay.com/da/?tour=ZW5nZWw=", "Wordle", "Find det hemmelige ord i 6 forsøg i bedste Mastermind stil. Klik på info-knappen til højre i linket for hjælp.", "", ""],
+["6", "", "", "Anagram", "Byt om på bogstaverne så de danner nye ord", "eksempel: <br> NUKLEAR LEJDE --> JULEKALENDER", "NØJSOM BASUNER"],
+["7", "", "", "Skjulte ord", "Noget er skjult ved at bogstaverne i ordene er sat i alfabetisk ordning. Find sætningen ved hjælp af hintet", "eksempel: <br> ABDEGJKLLNÆ--> BJÆLDEKLANG", "Filmtitel: AACELLLOTUVY"],
+["8", "", "", "Ord før/efter", "Find ordet der kan stå enten efter de tre listede ord og danne 3 nye ord", "eksempel: <br> TENNIS … <br> HOPPE … <br> FOD... <br> Svaret er BOLD  (TENNISBOLD, HOPPEBOLD, FODBOLD)", "KAMP ...  <br> SVANE … <br> MORGEN …"],
+["9", "", "", "Ord i mellem", "Find ordet der kan stå mellem de to listede ord og danne to nye ord", "eksempel: <br> JÆVN … FLUE. <br> Svaret er DØGN (JÆVNDØGN, DØGNFLUE)", "SNE … VEJR"],
+["12", "", "https://wordleplay.com/da/?tour=bXlycmE=", "Wordle", "Find det hemmelige ord i 6 forsøg i bedste Mastermind stil. Klik på info-knappen til højre i linket for hjælp.", "", ""],
+["13", "", "", "Anagram", "Byt om på bogstaverne så de danner nye ord", "eksempel: <br> NUKLEAR LEJDE --> JULEKALENDER", "STÆVNEDE MIDER. Hint: Optræder i det nye testamente og møder Jesus"],
+["14", "", "", "Ord før/efter", "Find ordet der kan stå enten før de tre listede ord og danne 3 nye ord", "eksempel: <br> … PALME <br> … FLUE <br> … KAGE. <br> Svaret er BANAN (BANANPALME, BANANFLUE, BANANKAGE)", "… TID  <br> … LOV  <br> … PENGE"],
+["15", "", "", "Skjulte ord", "Noget er skjult ved at bogstaverne i ordene er sat i alfabetisk ordning. Find sætningen ved hjælp af hintet", "eksempel: <br> ABDEGJKLLNÆ--> BJÆLDEKLANG", "Julekalender: BEEFGJLLPRRUUYÆ"],
+["16", "", "https://wordleplay.com/da/?tour=bmlzc2U=", "Wordle", "Find det hemmelige ord i 6 forsøg i bedste Mastermind stil. Klik på info-knappen til højre i linket for hjælp.", "", ""],
+["19", "", "", "Ord i mellem", "Find ordet der kan stå mellem de to listede ord og danne to nye ord", "eksempel: <br> JÆVN … FLUE. <br> Svaret er DØGN (JÆVNDØGN, DØGNFLUE)", "STJERNE … LYS"],
+["20", "", "", "Ord før/efter", "Find ordet der kan stå enten efter de tre listede ord og danne 3 nye ord", "eksempel: <br> TENNIS … <br> HOPPE … <br> FOD... <br> Svaret er BOLD  (TENNISBOLD, HOPPEBOLD, FODBOLD)", "EFTER ...  <br> FOR … <br> FEST …"],
+["21", "", "https://wordleplay.com/da/?tour=c2FsbWU=", "Wordle", "Find det hemmelige ord i 6 forsøg i bedste Mastermind stil. Klik på info-knappen til højre i linket for hjælp.", "", ""],
+["22", "", "", "Skjulte ord", "Noget er skjult ved at bogstaverne i ordene er sat i alfabetisk ordning. Find sætningen ved hjælp af hintet", "eksempel: <br> ABDEGJKLLNÆ--> BJÆLDEKLANG", "Filmcitat (engelsk): ACEEEEFHIIKKMOPPRRTUYYY"],
+["23", "", "", "Anagram", "Byt om på bogstaverne så de danner nye ord", "eksempel: <br> NUKLEAR LEJDE --> JULEKALENDER", "ORANGUTANGERNE. Hint: Karakter fra en julekalender og animationsfilm"]
 ]
 for question in questions:
+    
     dag = question[0]
-    one = question[3]
+    if question[2] == "":
+        one = question[3]
+    else:
+        one = f"""
+            <a href="{question[2]}" style="color: #9c163f;">{question[3]}</a>
+        """
     two = question[4]
     three = question[5]
     four = question[6]
@@ -35,15 +43,12 @@ for question in questions:
     <meta name="og:description" property="og:description" content="D&A glædelige jule quiz">
     <meta name="og:title" property="og:title" content="DA jul'en kom til ATP">
     <meta name="og:type" property="og:type" content="website">
-    <meta name="image" content="https://csschristmascalendar.com/assets/og.jpg">
     <meta name="description" content="D&A glædelige jule quiz">
     <link rel="icon" type="image/png" href="./assets/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./assets/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="styles.css"> 
-
-    <script defer data-domain="csschristmascalendar.com" src="https://plausible.io/js/plausible.js"></script>
     </head>
-    <body>
+    <body onload="set_gates()">
 
     <div class="question">
         <h1><span class="title-1">{one}</span></h1>
@@ -57,6 +62,18 @@ for question in questions:
         </div>
     </footer>
     </body>
+    <script>
+    function set_gates() {start}
+      var date = new Date();
+      var day = date.getDate();
+      var month = date.getMonth()+1;
+
+    if ((day < {dag} && month == 12) || (month != 12)) {start}
+        var role = document.getElementsByClassName('question')[0];
+        role.innerHTML = '<h1><span class=\"title-1\">Den er ikke klar endnu!</span></h1>';
+    {close}
+    {close}                
+    </script>
     </html>
     """
 
@@ -65,9 +82,8 @@ for question in questions:
 
     # print(f'<div class="title-container"><a href="day{dag}.html" target="_blank" title="{dag} December">{dag} December</a>')
 
-    start,close = "{","}"
     print(f"""
-        if (day < {dag} || month != 12) {start}
+        if ((day < {dag} && month == 12) || (month != 12)) {start}
             var role = document.getElementsByClassName('day-{dag}')[0];
             role.style.visibility = 'hidden';
         {close}
