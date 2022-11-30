@@ -4,16 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DFD Julekalender Sjov</title>
-  <meta name="twitter:image" property="twitter:image" content="https://csschristmascalendar.com/assets/og.jpg">
   <meta name="twitter:description" property="twitter:description" content="D&A glædelige jule quiz">
   <meta name="twitter:title" property="twitter:title" content="DA jul'en kom til ATP">
-  <meta name="twitter:creator" property="twitter:creator" content="@FullStackMaker">
-  <meta name="twitter:card" property="twitter:card" content="summary">
-  <meta name="og:image" property="og:image" content="https://csschristmascalendar.com/assets/og.jpg">
   <meta name="og:description" property="og:description" content="D&A glædelige jule quiz">
   <meta name="og:title" property="og:title" content="DA jul'en kom til ATP">
   <meta name="og:type" property="og:type" content="website">
-  <meta name="og:url" property="og:url" content="https://csschristmascalendar.com">
   <meta name="image" content="https://csschristmascalendar.com/assets/og.jpg">
   <meta name="description" content="D&A glædelige jule quiz">
   <link rel="icon" type="image/png" href="./assets/favicon-32x32.png" sizes="32x32" />
@@ -22,7 +17,7 @@
 
   <script defer data-domain="csschristmascalendar.com" src="https://plausible.io/js/plausible.js"></script>
 </head>
-<body>
+<body onload="set_gates()">
 
   <div class="calendar-grid">
     <div class="title">
@@ -1079,4 +1074,80 @@
     </div>
   </footer>
 </body>
+  <script>
+    function set_gates() {
+      var date = new Date();
+      var day = date.getDay();
+      var month = date.getMonth();
+
+      // if (day < 1 || month != 12) {                               
+      //   var role = document.getElementsByClassName('day-1')[0]; 
+      //   role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 2 || month != 12) {                               
+      //     var role = document.getElementsByClassName('day-2')[0]; 
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 5 || month != 12) {                               
+      //     var role = document.getElementsByClassName('day-5')[0]; 
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 6 || month != 12) {                               
+      //     var role = document.getElementsByClassName('day-6')[0]; 
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 7 || month != 12) {                               
+      //     var role = document.getElementsByClassName('day-7')[0]; 
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 8 || month != 12) {                               
+      //     var role = document.getElementsByClassName('day-8')[0]; 
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 9 || month != 12) {                               
+      //     var role = document.getElementsByClassName('day-9')[0]; 
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 12 || month != 12) {                              
+      //     var role = document.getElementsByClassName('day-12')[0];
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 13 || month != 12) {                              
+      //     var role = document.getElementsByClassName('day-13')[0];
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 14 || month != 12) {                              
+      //     var role = document.getElementsByClassName('day-14')[0];
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 15 || month != 12) {                              
+      //     var role = document.getElementsByClassName('day-15')[0];
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 16 || month != 12) {                              
+      //     var role = document.getElementsByClassName('day-16')[0];
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 19 || month != 12) {                              
+      //     var role = document.getElementsByClassName('day-19')[0];
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 20 || month != 12) {                              
+      //     var role = document.getElementsByClassName('day-20')[0];
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 21 || month != 12) {                              
+      //     var role = document.getElementsByClassName('day-21')[0];
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 22 || month != 12) {                              
+      //     var role = document.getElementsByClassName('day-22')[0];
+      //     role.style.visibility = 'hidden';                       
+      // }                                                           
+      // if (day < 23 || month != 12) {                              
+      //     var role = document.getElementsByClassName('day-23')[0];
+      //     role.style.visibility = 'hidden';                       
+      // }              
+    }
+  </script>
 </html>

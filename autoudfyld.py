@@ -30,16 +30,11 @@ for question in questions:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{dag} December</title>
-    <meta name="twitter:image" property="twitter:image" content="https://csschristmascalendar.com/assets/og.jpg">
     <meta name="twitter:description" property="twitter:description" content="D&A glædelige jule quiz">
     <meta name="twitter:title" property="twitter:title" content="DA jul'en kom til ATP">
-    <meta name="twitter:creator" property="twitter:creator" content="@FullStackMaker">
-    <meta name="twitter:card" property="twitter:card" content="summary">
-    <meta name="og:image" property="og:image" content="https://csschristmascalendar.com/assets/og.jpg">
     <meta name="og:description" property="og:description" content="D&A glædelige jule quiz">
     <meta name="og:title" property="og:title" content="DA jul'en kom til ATP">
     <meta name="og:type" property="og:type" content="website">
-    <meta name="og:url" property="og:url" content="https://csschristmascalendar.com">
     <meta name="image" content="https://csschristmascalendar.com/assets/og.jpg">
     <meta name="description" content="D&A glædelige jule quiz">
     <link rel="icon" type="image/png" href="./assets/favicon-32x32.png" sizes="32x32" />
@@ -68,4 +63,12 @@ for question in questions:
     with open(f"day{dag}.html", "w", encoding="utf-8") as f:
         f.writelines(s)
 
-    print(f'<div class="title-container"><a href="day{dag}.html" target="_blank" title="{dag} December">{dag} December</a>')
+    # print(f'<div class="title-container"><a href="day{dag}.html" target="_blank" title="{dag} December">{dag} December</a>')
+
+    start,close = "{","}"
+    print(f"""
+        if (day < {dag} || month != 12) {start}
+            var role = document.getElementsByClassName('day-{dag}')[0];
+            role.style.visibility = 'hidden';
+        {close}
+    """)
